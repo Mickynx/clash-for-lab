@@ -3,6 +3,7 @@
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 cd "$SCRIPT_DIR" || exit 1
 . "${SCRIPT_DIR}/script/common.sh"
+. "${SCRIPT_DIR}/script/clashapi.sh"
 . "${SCRIPT_DIR}/script/clashctl.sh"
 
 # 用于检查环境是否有效

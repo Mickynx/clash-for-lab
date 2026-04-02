@@ -774,6 +774,10 @@ function clashctl() {
     tui)
         clashtui
         ;;
+    api)
+        shift
+        clashapi "$@"
+        ;;
     *)
         cat <<EOF
 
@@ -797,6 +801,7 @@ Commands:
     secret   [SECRET]       Web 控制台密钥
     subscribe [URL]         设置或查看订阅地址
     update   [auto|log]     更新订阅配置
+    api      <子命令>       API 命令行工具 (clash api help 查看详情)
 
 说明:
     • 用户空间运行，无需 sudo 权限
